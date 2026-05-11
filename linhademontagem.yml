@@ -2,9 +2,9 @@ name: Minha primeira linha de montagem
 
 on:
 push:
-  branches: (main)
+  branches: [main]
 
-jobs: 
+  jobs:
 build e-teste:
  runs-on: ubuntu-latest
 
