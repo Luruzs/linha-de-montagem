@@ -1,1 +1,20 @@
+name: Minha primeira linha de montagem
 
+on:
+push:
+  branches: (main)
+
+jobs: 
+build e-teste:
+ runs-on: ubuntu-latest
+
+ steps:
+ -name: 1.pegar o chassi do carro(codigo-fonte)
+ uses: actions/checkout@v3
+
+ -name: 2.Estação de Build (Montagem)
+ run: echo ''Construindo o projeto... Verificando se todas as peças se encaixam!''
+
+ -name: 3. Estação de teste (Controle de qualidade)
+ run: echo ''Rodando os teste automatizados... Verificando se a porta abre e fecha!''
+ 
